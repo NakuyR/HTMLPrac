@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
+<html>
+    <title>구글 메인화면 예제</title>
+    <head>
+        <meta name="author" content="학번">
+        <meta charset="utf-8">
+        <meta name="keywords" content="computer">
+        <base href="https://jdh-eeunc.run.goorm.io/JDH20201016/">
+        <script src="js/user_join.js" defer></script>
+	<style>
+		body{
+			margin-top:100px;
+		}
+		h2{
+			color:green;
+		}
+		h1{
+			color:green;
+		}
+	</style>
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <img src="img/googlelogo_color_272x92dp.png" alt="구글이미지"><br>
+            <h1>
+                Google 계정 만들기
+            </h1><br>
+            <form id="register" action ="index.html" method="post">
+                <input type="text" id="FN" placeholder="성">
+                <input type="text" id="LN" placeholder="이름"><br>
+                <input type="email" id="email" placeholder="이메일@주소.com"><br>
+                <h2>
+                    문자, 숫자, 마침표를 사용할 수 있습니다.
+                </h2>
+                <br>
+                <label>비밀번호 : </label><input type="password" id="pw" placeholder="비밀번호"><br>
+                <label>비밀번호 확인 : </label><input type="password" id="pwcheck" placeholder="비밀번호 확인">
+                <h2>
+                    문자, 숫자, 기호를 조합하여 8자 이상을 사용하세요.
+                </h2>
+                <br>
+                <input type="button" onclick="join_check()" value="회원가입">
+                <input type="reset" value="재입력">
+            </form>
+        </div>
+    </body>
+</html>

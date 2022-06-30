@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
+<html>
+    <title>구글 메인화면 예제</title>
+    <head>
+        <meta name="author" content="학번">
+        <meta charset="utf-8">
+        <meta name="keywords" content="computer">
+        <base href="https://jdh-eeunc.run.goorm.io/JDH20201016/">
+        <script src="js/over.js"></script>
+		<script src="js/cookie.js"></script>
+		<script src="js/time_logout.js"></script>
+		<script src="js/local_storage.js"></script>
+		<script src="js/local_storage1.js"></script>
+		<script src="js/local_storage2.js"></script>
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=20fa481c3ed79e598db5bc5855e8f640"></script>
+		<script src="js/map.js" defer></script>
+    </head>
+    <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        <p style="text-align:left;">
+            <b>
+                <font size="2em" color="green">문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의</font>
+            </b>
+        </p>
+        <p style="text-align:right">
+            <button type="button" style="width:120pt;
+                    						   height:60pt;
+                    						   color:white;
+                    						   background-color:blue">
+                <b>
+                    <font size="2em"><script src = "js/get_id.js"></script></font>
+                </b>
+            </button>
+            <button type="button" style="width:120pt;
+                						   height:60pt;
+                						   color:white;
+                						   background-color:green" onclick="self.location.href='index.html'; local_del(); delCookie(); session_del();">
+                <b>
+                    <font size="5em">로그아웃</font>
+                </b>
+            </button>
+        </p>
+        <br>
+        <!--br은 줄 바꿈입니다. -->
+        <hr>
+        <p style="text-align:center;">
+            <a href="index.html" target="_blank"><img src="img/googlelogo_color_272x92dp.png" alt="구글이미지" onmouseover="over(this)" onmouseout="out(this)"></a>
+            <br>
+        </p>
+        <p style="text-align:center">
+            검색<input type="text" name="search" size="55" value=""><button type="button" onclick="session_get();">검색</button><br>
+        </p><br><br><br>
+        
+		<div id="map" style="width:700px;height:400px;margin: 0 auto;">
+			
+		</div>
+		<p style="text-align:center">
+			<em>지도를 클릭해주세요!</em>
+		</p>
+		<p style="text-align:center" id="result">
+			
+		</p>
+        
+		<a href="map.html">카카오 맵 연동 테스트</a>
+        <br>
+        <br>
+        <hr>
+        <p style="text-align:right;">
+            <font size="3em" color="red">문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등</font>
+        </p>
+        <br>
+    </body>
+</html>

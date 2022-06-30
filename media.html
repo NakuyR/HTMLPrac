@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
+<html>
+    <title>구글 메인화면 예제</title>
+    <head>
+		<meta name="author"content="학번">
+		<meta charset="utf-8">
+		<meta name="keywords"content="computer">
+		<base href="https://jdh-eeunc.run.goorm.io/JDH20201016/">
+		<script src="js/audio.js" defer></script>
+		<script src="js/video.js" defer></script>
+    </head>
+    <body>
+		<h3>오디오와 비디오 내장하기</h3>
+		<hr>
+			<audio id="audio" src="mov/Fingerprint_MiniVandals.mp3" loop controls>웹 브라우저가 audio 태그를 지원하지 않습니다.</audio>
+		<div id="msg">이곳에 오디오 제어 메세지 출력</div>
+			<button type="button" id="play" onclick="control(event)">play</button>
+			<button type="button" id="pause" onclick="control(event)">pause</button>
+			<button type="button" id="replay" onclick="control(event)">replay</button>
+			<button type="button" id="vol-" onclick="control(event)">vol-</button>
+			<button type="button" id="vol+" onclick="control(event)">vol+</button>
+			<button type="button" id="mute on/off" onclick="control(event)">mute on/off</button>
+		<hr>
+		<video id="video" width="0" height="0" controls>
+		<source src="mov/Blossoms.mp4" type="video/mp4">웹 브라우저가 video 태그를 지원하지 않습니다.</video>
+		<button type="button" id="play" onclick="play();">재생/일시정지</button>
+		<button type="button" id="play" onclick="big();">큰화면</button>
+		<button type="button" id="play" onclick="small();">작은화면</button>
+
+    </body>
+</html>	
